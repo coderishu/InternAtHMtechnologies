@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:text="Item Name"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:layout_alignTop="@+id/imageViewIcon"
+        android:layout_toRightOf="@+id/imageViewIcon"
+        android:layout_toEndOf="@+id/imageViewIcon" />
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/imageViewIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:text="Item Class"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:layout_below="@+id/textViewName"
+        android:layout_toRightOf="@+id/textViewSection"
+        android:layout_toEndOf="@+id/textViewSection"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp" />
+    <TextView
+        android:id="@+id/textViewSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:text="Item Section"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:layout_alignTop="@+id/textViewClass"
+        android:layout_alignLeft="@+id/textViewName"
+        android:layout_alignStart="@+id/textViewName" />
+
+</RelativeLayout>
